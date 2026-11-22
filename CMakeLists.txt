@@ -19,7 +19,7 @@ FetchContent_Declare(properties-parser
 
 FetchContent_MakeAvailable(libhat properties-parser)
 
-add_library(mcpelauncherzoom SHARED src/main.cpp src/zoom.cpp src/zoom.h src/util.cpp src/util.h src/transition.cpp src/transition.h src/conf.cpp src/conf.h src/imgui.cpp src/imgui.h src/key_mapping.h)
+add_library(mcpelauncherzoom SHARED src/main.cpp src/zoom.cpp src/zoom.h src/util.cpp src/util.h src/transition.cpp src/transition.h src/easing.h src/conf.cpp src/conf.h src/imgui.cpp src/imgui.h src/key_mapping.h)
 
 target_link_libraries(mcpelauncherzoom PUBLIC libhat::libhat properties-parser)
 
